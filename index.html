@@ -56,13 +56,13 @@
       </nav>
 
       <div class="col-12 px-0 image-wrap">
-        <button class="btn btn-default background-amarelo text-white">Solicitar Orçamento</button>
+        <a class="btn btn-default background-amarelo text-white" href="#contato">Solicitar Orçamento</a>
         <img src="./img/background_img.png" class="img-fluid" alt="Imagem de fundo" draggable="false" />
       </div>
 
       <!-- Profissional -->
-      <div class="col-12 py-5 background-amarelo">
-        <h1 class="text-white text-center mb-4 fw-bold" id="profissao">PROFISSÃO</h1>
+      <div class="col-12 py-5 background-amarelo" id="profissao">
+        <h1 class="text-white text-center mb-4 fw-bold">PROFISSÃO</h1>
         <div class="d-flex align-items-stretch">
           <div class="nav flex-column nav-pills pill-adjust" id="v-pills-tab" role="tablist"
             aria-orientation="vertical">
@@ -109,8 +109,8 @@
       </div>
 
       <!-- Sobre -->
-      <div class="row py-5">
-        <h1 class="text-center mb-4 fw-bold texto-amarelo" id="sobre">SOBRE</h1>
+      <div class="row py-5" id="sobre">
+        <h1 class="text-center mb-4 fw-bold texto-amarelo">SOBRE</h1>
         <div class="col-12 d-md-flex d-lg-flex px-5 justify-content-center align-items-center">
           <img src="./img/foto_pessoal.jpg" class="img-fluid rounded-circle" alt="Foto frontal">
           <div class="mx-0 mx-lg-5 mt-lg-0 mt-md-0 mt-2">
@@ -123,8 +123,8 @@
       </div>
 
       <!-- Serviços -->
-      <div class="row background-amarelo py-5 mx-0">
-        <h1 class="fw-bold text-white text-center pb-5" id="servicos">SERVIÇOS</h1>
+      <div class="row background-amarelo py-5 mx-0" id="servicos">
+        <h1 class="fw-bold text-white text-center pb-5" >SERVIÇOS</h1>
         <div class="col-sm-12 col-lg-4 col-md-4 mt-2 mt-lg-0 mt-md-0">
           <div class="border rounded mx-lg-5 mx-0 h-100 text-white fw-bold">
             <p>Planejamento macro econômico e financeiro do condomínio para melhor gestão.</p>
@@ -143,8 +143,8 @@
       </div>
 
       <!-- Depoimentos -->
-      <div class="row py-5 mx-0">
-        <h1 class="fw-bold texto-amarelo text-center pb-5" id="depoimentos">DEPOIMENTOS</h1>
+      <div class="row py-5 mx-0" id="depoimentos">
+        <h1 class="fw-bold texto-amarelo text-center pb-5">DEPOIMENTOS</h1>
         <div class="col-sm-12 col-lg-4 col-md-4 mt-2 mt-lg-0 mt-md-0">
           <div class="border rounded mx-lg-5 mx-0 h-100 fw-bold">
             <p>Atento a todos os detalhes, mantém os condôminos informados de todos os passos, ideias e sugestões à melhoria do nosso condomínio.</p>
@@ -166,8 +166,8 @@
       </div>
 
       <!-- Contato -->
-      <div class="row py-5 mx-0">
-        <h1 class="fw-bold texto-amarelo text-center pb-5" id="contato">CONTATO</h1>
+      <div class="row py-5 mx-0" id="contato">
+        <h1 class="fw-bold texto-amarelo text-center pb-5" >CONTATO</h1>
         <form class="row px-lg-4">
           <div class="col-6">
             <input type="text" class="form-control" placeholder="Nome...">
@@ -186,16 +186,40 @@
       </div>
 
       <!-- Rodapé -->
-      <div class="row background-amarelo">
-        <div class="col-3"></div>
-        <div class="col-3">
-          <h4>CONTATO</h4>
+      <div class="row background-amarelo py-5 mx-0">
+        <div class="col-3 my-auto">
+          <img src="./img/logo_preto.png" class="img-fluid" alt="Logo" draggable="false">
         </div>
-        <div class="col-3">
-          <h4>ENDEREÇO</h4>
+        <div class="col-3 text-white">
+          <h5 class=" fw-bold">CONTATO</h5>
         </div>
-        <div class="col-3">
-          <h4>HORÁRIO DE FUNCIONAMENTO</h4>
+        <div class="col-3 text-white">
+          <h5 class=" fw-bold">ENDEREÇO</h5>
+          <ul class="list-unstyled">
+            <li>Rua Primeiro de Maio, 51</li>
+            <li>Aparecida</li>
+            <li>Santos - SP</li>
+            <li>11035-181</li>
+          </ul>        
+        </div>
+        <div class="col-3 text-white">
+          <h5 class=" fw-bold">HORÁRIO DE FUNCIONAMENTO</h5>
+          <ul class="list-unstyled">
+            <li>Seg.: 09:00 – 18:00</li>
+            <li>Ter.:  09:00 – 18:00</li>
+            <li>Qua.: 09:00 – 18:00</li>
+            <li>Qui.: 09:00 – 18:00</li>
+            <li>Sex.: 09:00 – 18:00</li>
+            <li>Sáb.: 09:00 – 12:00</li>
+            <li>Dom.: Fechado</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row background-black mx-0">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <img src="./img/Logo_Santa_Art.png" width="170" alt="Logo Santa Art" draggable="false">
+          <label class="text-white">Santa Art - CNPJ: 40.134.911/0001-26</label>
         </div>
       </div>
     </div>

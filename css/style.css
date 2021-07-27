@@ -18,7 +18,7 @@ body{
     text-align:center;
 }
 
-.image-wrap button{
+.image-wrap a{
     position:absolute;
     z-index:1;
     top:50%;
@@ -68,7 +68,7 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
-    .image-wrap button{
+    .image-wrap a{
             top: 50%;
         margin:20px 0 0 -81.78px
     }
