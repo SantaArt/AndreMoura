@@ -34,6 +34,10 @@ body{
     background-color: #000;
 }
 
+.border-amarelo{
+    border-color: var(--amarelo-principal) !important;
+}
+
 .navbar-item-color{
     color: var(--amarelo-principal) !important;
     font-weight: bold;
@@ -65,6 +69,18 @@ body{
     color: var(--amarelo-principal) !important;
     font-weight: bold;
     font-size: 16px;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-template-columns-2 {
+	grid-template-columns: 40px 2fr;
+}
+
+.grid-template-columns-3 {
+	grid-template-columns: 50px 2fr;
 }
 
 @media only screen and (max-width: 600px) {
