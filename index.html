@@ -23,6 +23,14 @@
 <body>
 
   <div class="container-fluid">
+    <div>
+      <a
+        href="https://api.whatsapp.com/send?phone=+5513981273494&text=Olá, gostaria de mais informações sobre os seus serviços."
+        target="_blank"
+        ><img class="whatsapp" src="./img/logo_whatsapp.png" width="100px"
+      /></a>
+    </div>
+
     <div class="row">
       <nav class="navbar navbar-expand-lg navbar-dark background-black">
         <div class="container-fluid">
@@ -45,9 +53,9 @@
               <li class="nav-item">
                 <a class="nav-link text-uppercase navbar-item-color" href="#servicos">Serviços</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link text-uppercase navbar-item-color" href="#depoimentos">Depoimentos</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link text-uppercase navbar-item-color" href="#contato">Contato</a>
               </li>
@@ -112,7 +120,7 @@
       <!-- Sobre -->
       <div class="row py-5" id="sobre">
         <h1 class="text-center mb-4 fw-bold texto-amarelo">SOBRE</h1>
-        <div class="col-12 d-md-flex d-lg-flex px-5 justify-content-center align-items-center">
+        <div class="col-12 d-md-flex d-lg-flex text-sm-center px-md-5 justify-content-center align-items-center">
           <img src="./img/foto_pessoal.jpg" class="img-fluid rounded-circle" alt="Foto frontal">
           <div class="mx-0 mx-lg-5 mt-lg-0 mt-md-0 mt-2">
             <p class="fw-bold">André Luiz Guedes de Moura</p>
@@ -148,7 +156,7 @@
       </div>
 
       <!-- Depoimentos -->
-      <div class="row py-5 mx-0" id="depoimentos">
+      <!-- <div class="row py-5 mx-0" id="depoimentos">
         <h1 class="fw-bold texto-amarelo text-center pb-5">DEPOIMENTOS</h1>
         <div class="col-sm-12 col-lg-4 col-md-4 mt-2 mt-lg-0 mt-md-0">
           <div class="border border-amarelo rounded mx-lg-5 mx-0 h-100 fw-bold text-center d-flex align-content-between justify-content-center flex-wrap py-5 px-3">
@@ -168,21 +176,21 @@
             <label>Sr Lupércio.</label>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Contato -->
       <div class="row py-5 mx-0" id="contato">
         <h1 class="fw-bold texto-amarelo text-center pb-5" >CONTATO</h1>
-        <form class="row px-lg-4">
-          <div class="col-6">
-            <input type="text" class="form-control" placeholder="Nome...">
+        <form class="row px-lg-4" method="POST" action="mailer.php">
+          <div class="col-md-6 col-sm-12">
+            <input type="email" id="email" name="email" class="form-control" placeholder="E-mail..." required>
           </div>
-          <div class="col-6">
-            <input type="text" class="form-control" placeholder="Assunto...">
+          <div class="col-md-6 col-sm-12 mt-2 mt-lg-0">
+            <input type="text" id="assunto" name="assunto" class="form-control" placeholder="Assunto..." required>
 
           </div>
-          <div class="col-12 mt-lg-4">
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control" placeholder="Mensagem..."></textarea>
+          <div class="col-12 mt-lg-4 mt-2">
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control" placeholder="Mensagem..." required></textarea>
           </div>
           <div class="col-12 mt-3 d-flex flex-row-reverse">
             <button class="btn btn-success">Enviar</button>
@@ -192,10 +200,10 @@
 
       <!-- Rodapé -->
       <div class="row background-amarelo py-5 mx-0">
-        <div class="col-3 my-auto">
+        <div class="col-md-3 col-sm-12 my-auto">
           <img src="./img/logo_preto.png" class="img-fluid" alt="Logo" draggable="false">
         </div>
-        <div class="col-3 text-white">
+        <div class="col-md-3 col-sm-12 mt-3 mt-lg-0 text-white">
           <h5 class=" fw-bold">CONTATO</h5>
           <div class="grid grid-template-columns-2">
             <div><img src="./img/phone_icon.png" width="30" alt=""></div>
@@ -208,7 +216,7 @@
             <div>@andreluiz.sindico</div>
           </div>
         </div>
-        <div class="col-3 text-white">
+        <div class="col-md-3 col-sm-12 mt-3 mt-lg-0 text-white">
           <h5 class=" fw-bold">ENDEREÇO</h5>
           <ul class="list-unstyled">
             <li>Rua Primeiro de Maio, 51</li>
@@ -217,7 +225,7 @@
             <li>11035-181</li>
           </ul>        
         </div>
-        <div class="col-3 text-white">
+        <div class="col-md-3 col-sm-12 mt-3 mt-lg-0 text-white">
           <h5 class=" fw-bold">HORÁRIO DE FUNCIONAMENTO</h5>
           <div class="grid grid-template-columns-3">
            <div>Seg.:</div>
@@ -240,8 +248,8 @@
 
       <div class="row background-black mx-0">
         <div class="col-12 d-flex justify-content-center align-items-center">
-          <img src="./img/Logo_Santa_Art.png" width="170" alt="Logo Santa Art" draggable="false">
-          <label class="text-white">Santa Art - CNPJ: 40.134.911/0001-26</label>
+          <!-- <img src="./img/Logo_Santa_Art.png" width="170" alt="Logo Santa Art" draggable="false"> -->
+          <label class="text-white">CNPJ: 40.134.911/0001-26</label>
         </div>
       </div>
     </div>

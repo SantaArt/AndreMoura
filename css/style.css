@@ -83,6 +83,16 @@ body{
 	grid-template-columns: 50px 2fr;
 }
 
+.whatsapp {
+    position: fixed;
+    top: 85%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
 @media only screen and (max-width: 600px) {
     .image-wrap a{
             top: 50%;
@@ -92,5 +102,9 @@ body{
     .pill-adjust{
         min-width: auto !important; 
         width: 50% !important;
+    }
+
+    .text-sm-center{
+        text-align: center !important;
     }
   }
